@@ -1,0 +1,25 @@
+# This is a sample story to demonstrate the flow
+title: The Great Adventure
+author: Thomas Steven
+pages:
+  - pageNumber: 1
+    text: "It's a sunny day."
+    choices:
+      - pageNumber: 2
+        text: "Go outside."
+      - pageNumber: 3
+        text: "Stay inside."
+  - pageNumber: 2
+    text: "You are outside. It's beautiful!"
+    choices:
+      - pageNumber: 3
+        text: "Go inside."
+      - pageNumber: 4
+        text: "Leave this planet."
+  - pageNumber: 3
+    text: "You are inside. It's boring!"
+    choices:
+      - pageNumber: 3
+        text: "Go inside."
+  - pageNumber: 4
+    text: "You leave the planet. Great job!"
