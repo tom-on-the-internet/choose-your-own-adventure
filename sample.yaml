@@ -3,23 +3,123 @@ title: The Great Adventure
 author: Thomas Steven
 pages:
   - pageNumber: 1
-    text: "It's a sunny day."
+    text: |
+      ---------------------------------------
+      |                                     |
+      |                         .----.      |
+      |             .---------. | == |      |
+      |             |.-"""""-.| |----|      |
+      |             ||       || | == |      |
+      |             ||       || |----|      |
+      |             |'-.....-'| |::::|      |
+      |             `"")---(""` |___.|      |
+      |            /:::::::::::\" _  "      |
+      |          /:::=======:::\`\`\        |
+      |       jgs `"""""""""""""`  '-'      |                           |
+      |                                     |
+      |_____________________________________|
+
+      You wake up one morning and see your computer is already on. "Strange", you think. "I'm sure I turned it off last night before going to bed."
+
+      You walk over to the computer and see that a message is printed on the screen.
+
+      "DO NOT TURN ME OFF. OPEN A TERMINAL AND TYPE 'open_connection l0v3'."
     choices:
-      - pageNumber: 2
-        text: "Go outside."
-      - pageNumber: 3
-        text: "Stay inside."
+      - "If you want to go back to sleep and hope this was a dream, turn to page 2"
+      - "If you want to follow the instructions on the computer, turn to page 3"
+      - "If you want to unplug the computer, go to page 4"
   - pageNumber: 2
-    text: "You are outside. It's beautiful!"
+    text: |
+      You close your eyes and fall back asleep. Bliss! You dream of pizza and ice cream. Life's great. But you can't sleep forever...
     choices:
-      - pageNumber: 3
-        text: "Go inside."
-      - pageNumber: 4
-        text: "Leave this planet."
+      - "Turn to page 1"
   - pageNumber: 3
-    text: "You are inside. It's boring!"
+    text: |
+      You stumble over to your computer and carefully type in 'open_connection 10v3'. You press the Enter key. Your screen fills with text.
+
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+
+      The same line is repeated thousands of times. Your computer's fans are screaming. The CPU temperature is dangerously high. You begin to worry that your computer might melt.
     choices:
-      - pageNumber: 3
-        text: "Go inside."
+      - "If you want to unplug the computer, go to page 4"
+      - "To wait and see how this plays out, go to page 5"
+      - "If you'd like to try screaming at the computer, go to page 6"
   - pageNumber: 4
-    text: "You leave the planet. Great job!"
+    text: |
+      ---------------------------------------
+      |                                     |
+      |                 zeeeeee-            |
+      |                z$$$$$$"             |
+      |               d$$$$$$"              |
+      |              d$$$$$P                |
+      |             d$$$$$P                 |
+      |            $$$$$$"                  |
+      |          .$$$$$$"                   |
+      |         .$$$$$$"                    |
+      |        4$$$$$$$$$$$$$"              |
+      |       z$$$$$$$$$$$$$"               |
+      |       """""""3$$$$$"                |
+      |             z$$$$P                  |
+      |            d$$$$"                   |
+      |          .$$$$$"                    |
+      |         z$$$$$"                     |
+      |        z$$$$P                       |
+      |       d$$$$$$$$$$"                  |
+      |      *******$$$"                    |
+      |           .$$$"                     |
+      |          .$$"                       |
+      |         4$P"                        |
+      |        z$"                          |
+      |       zP                            |
+      |      z"                             |
+      |     /    Gilo94'                    |
+      |                                     |
+      |_____________________________________|
+
+      "Not today, computer!" you laugh as you reach behind it and pull the plug. But as you do you feel an incredible shock run up your arm and through your body. You collapse on the floor wishing you were better at following instructions. In your last moments, you look at the computer screen.
+
+      "IT DIDN'T HAVE TO BE THIS WAY."
+
+      The End
+  - pageNumber: 5
+    text: |
+      --------------------------------------------------------
+      |                             ____                     |
+      |                     __,-~~/~    `---.                |
+      |                   _/_,---(      ,    )               |
+      |               __ /        <    /   )  \___           |
+      |- ------===;;;'====------------------===;;;===----- - |
+      |                  \/  ~"~"~"~"~"~\~"~)~"/             |
+      |                  (_ (   \  (     >    \)             |
+      |                   \_( _ <         >_>'               |
+      |                      ~ `-i' ::>|--"                  |
+      |                          I;|.|.|                     |
+      |                         <|i::|i|`.                   |
+      |                        (` ^'"`-' ")                  |
+      |______________________________________________________|
+
+      "Let's see how this plays out" you say, with a bit too much confidence. The same text is repeated on the screen.
+
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+      "10v3 request made... rejected. Retrying..."
+
+      The fans, having spun their last spin, stop. The computer starts to shake and then... BOOM! The computer explodes into a million pieces. You explode into several thousand pieces, most of which are too charred to recognize. Not quite the outcome you were hoping for.
+
+      The End
+
