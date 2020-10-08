@@ -125,7 +125,6 @@ func printPage(page Page) {
 func getBook() (*Book, error) {
 	book := &Book{}
 	filename := os.Args[1]
-	fmt.Println(filename)
 	source, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return book, err
