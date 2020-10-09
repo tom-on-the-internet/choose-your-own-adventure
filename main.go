@@ -42,12 +42,7 @@ func main() {
 }
 
 func readBook(book *Book) {
-	fmt.Println()
-	fmt.Println(book.Title)
-	fmt.Println()
-	fmt.Println("by")
-	fmt.Println()
-	fmt.Println(book.Author)
+	printBookDetails(book)
 
 	page, _ := getPage(book, firstPageNumber)
 
@@ -99,6 +94,14 @@ func chooseNextPage(book *Book) Page {
 
 		return page
 	}
+}
+func printBookDetails(book *Book) {
+	fmt.Println()
+	fmt.Println(book.Title)
+	fmt.Println()
+	fmt.Println("by")
+	fmt.Println()
+	fmt.Println(book.Author)
 }
 
 func printPage(page Page) {
