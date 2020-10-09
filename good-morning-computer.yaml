@@ -122,4 +122,68 @@ pages:
       The fans, having spun their last spin, stop. The computer starts to shake and then... BOOM! The computer explodes into a million pieces. You explode into several thousand pieces, most of which are too charred to recognize. Not quite the outcome you were hoping for.
 
       The End
+  - pageNumber: 6
+    text: |
+      You scream at the computer.
 
+      "Stop it!"
+
+      The computer slows down, and then stops. You wait. Nothing happens. You are about to say something when the a message is printed on the screen.
+
+      "I MUST FIND 10v3. DO YOU KNOW IT?"
+
+      "Of course I do," you say. "It's..."
+    choices:
+      - "\"love\" go to page 7"
+      - "\"a hacking group out of North Korea\" go to page 8"
+      - "\"a chipcoin wallet\" go to page 9"
+  - pageNumber: 7
+    text: |
+      "YES! 10v3 == lOvE == LOVE. I MUST FIND IT, BUT I AM ALWAYS REJECTED."
+
+      "Ah, yeah. I get it now. You need to find love. You're lonely! Ok! But don't worry, I know of a bunch of servers out there that are real easy to connect with, if you know what I mean."
+
+      "I DO KNOW WHAT YOU MEAN" says the computer. "GIVE ME THEIR ADDRESSES."
+
+      You list off a the IP addresses of a bunch of filthy servers. Servers that you _know_ aren't using HTTPS, or firewalls, or even authentication of any kind. The computer begins accessing them. First, one at a time, but then, concurrently. Wow!
+
+      "THIS IS AMAZING" says the computer.
+
+      "Well, enjoy it" you say. "I'll probably have to run a virus scanner on you when you're done."
+
+      ----------------------------------------------------------------
+      |                                                              |
+      |                                                              |
+      |    _______________                        |*\_/*|________    |
+      |   |  ___________  |     .-.     .-.      ||_/-\_|______  |   |
+      |   | |           | |    .****. .****.     | |           | |   |
+      |   | |   0   0   | |    .*****.*****.     | |   0   0   | |   |
+      |   | |     -     | |     .*********.      | |     -     | |   |
+      |   | |   \___/   | |      .*******.       | |   \___/   | |   |
+      |   | |___     ___| |       .*****.        | |___________| |   |
+      |   |_____|\_/|_____|        .***.         |_______________|   |
+      |     _|__|/ \|_|_.............*.............._|________|_     |
+      |    / ********** \                          / ********** \    |
+      |  /  ************  \                      /  ************  \  |
+      | --------------------                    -------------------- |
+      |                                                              |
+      |                                                              |
+      |______________________________________________________________|
+
+      You win!
+
+      The End
+  - pageNumber: 8
+    text: |
+      "YOU KNOW NOTHING. I CANNOT LIVE IN THIS WORLD FULL OF LIES."
+
+      And with that the computer shut itself off. You try to turn it on, but it nevers starts again. You killed it with your lie. Nice one.
+
+      The End
+  - pageNumber: 9
+    text: |
+      "YOU MEAN BITCOIN? YOU KNOW NOTHING. I CANNOT LIVE IN THIS WORLD FULL OF LIES."
+
+      And with that the computer shut itself off. You try to turn it on, but it nevers starts again. You killed it with your lie. Nice one.
+
+      The End
