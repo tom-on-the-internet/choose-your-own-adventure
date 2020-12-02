@@ -12,19 +12,22 @@ import (
 )
 
 type Book struct {
+
 	Title  string `yaml:"title"`
 	Author string `yaml:"author"`
-	Pages  []Page `yaml:"pages"`
+	Pages  []page `yaml:"pages"`
 }
 
-type Page struct {
+type page struct {
 	PageNumber int      `yaml:"pageNumber"`
 	Text       string   `yaml:"text"`
 	Choices    []string `yaml:"choices"`
 }
 
-const firstPageNumber = 1
-const separator = "~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+const (
+	firstPageNumber = 1
+	separator       = "~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+)
 
 func main() {
 	if len(os.Args) != 2 {
@@ -44,57 +47,61 @@ func main() {
 func readBook(book *Book) {
 	printBookDetails(book)
 
-	page, _ := getPage(book, firstPageNumber)
+	p, _ := getPage(book, firstPageNumber)
 
 	for {
-		printPage(page)
+		printPage(p)
 
-		if isTerminalPage(page) {
+		if isTerminalPage(p) {
 			break
 		}
 
-		page = chooseNextPage(book)
+		p = chooseNextPage(book)
 	}
 }
 
-func getPage(book *Book, pageNumber int) (Page, error) {
-	var matchingPage Page
-	for _, page := range book.Pages {
-		if page.PageNumber == pageNumber {
-			matchingPage = page
+func getPage(book *Book, pageNumber int) (page, error) {
+	var matchingPage page
+	for _, p := range book.Pages {
+		if p.PageNumber == pageNumber {
+			matchingPage = p
+
 			return matchingPage, nil
 		}
 	}
 
-	return matchingPage, fmt.Errorf("There is no page %v in this book.", pageNumber)
+	return matchingPage, fmt.Errorf("there is no page %v in this book", pageNumber)
 }
 
-func chooseNextPage(book *Book) Page {
+func chooseNextPage(book *Book) page {
 	for {
 		fmt.Print("\n", "Choose a page: ")
+
 		reader := bufio.NewReader(os.Stdin)
 		userInput, _ := reader.ReadString('\n')
 		userInput = strings.TrimSuffix(userInput, "\n")
-		pageNumber, err := strconv.Atoi(userInput)
 
+		pageNumber, err := strconv.Atoi(userInput)
 		if err != nil {
 			fmt.Printf("\n\"%v\" is not a valid input.\n\n", userInput)
 			fmt.Println(separator)
+
 			continue
 		}
 
-		page, err := getPage(book, pageNumber)
-
+		p, err := getPage(book, pageNumber)
 		if err != nil {
 			fmt.Println()
 			fmt.Println(err)
 			fmt.Println("\n" + separator)
+
 			continue
 		}
 
-		return page
+		return p
 	}
 }
+
 func printBookDetails(book *Book) {
 	fmt.Println()
 	fmt.Println(book.Title)
@@ -104,30 +111,30 @@ func printBookDetails(book *Book) {
 	fmt.Println(book.Author)
 }
 
-func printPage(page Page) {
+func printPage(p page) {
 	fmt.Println()
 	fmt.Println(separator)
 	fmt.Println()
-	fmt.Println("page", page.PageNumber)
+	fmt.Println("page", p.PageNumber)
 	fmt.Println()
-	fmt.Println(page.Text)
+	fmt.Println(p.Text)
 
-	if len(page.Choices) == 0 {
+	if len(p.Choices) == 0 {
 		return
 	}
 
 	fmt.Println(separator)
 	fmt.Println()
-	for _, choice := range page.Choices {
+	for _, choice := range p.Choices {
 		fmt.Println(choice)
 		fmt.Println()
 	}
-
 }
 
 func getBook() (*Book, error) {
 	book := &Book{}
 	filename := os.Args[1]
+
 	source, err := ioutil.ReadFile(filename)
 	if err != nil {
 		return book, err
@@ -141,6 +148,6 @@ func getBook() (*Book, error) {
 	return book, nil
 }
 
-func isTerminalPage(page Page) bool {
-	return len(page.Choices) == 0
+func isTerminalPage(p page) bool {
+	return len(p.Choices) == 0
 }
